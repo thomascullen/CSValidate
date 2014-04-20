@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Validations</title>
+  <link rel="stylesheet" href="style.css?v=0.1">
+  <script src="CSvalidate.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript" src="//use.typekit.net/tmg2vic.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">
+  	document.addEventListener('DOMContentLoaded', function(){
+  		CSValidate('#someform')
+  	});
+  </script>
+
+</head>
+
+<body>
+	<h1 class="fadeIn">CSValidation.js</h1>
+	<h2 class="fadeIn">Easy to use clientside validation with javascript. <br> CSValidate does not require any other libraries such as jquery.</h2>
+	<a class="fadeIn" href="#" id="download">
+		<h3>Download</h3>
+		<span>v0.1</span>
+	</a>
+	<a href="#" class="documentation fadeIn">Documentation</a>
+	<form action="" id="someform">
+		<fieldset><input type="text" validate-required placeholder="Required Field" autofocus></fieldset>
+		<fieldset><input type="text" validate-min-length="4" placeholder="Minimum 4 characters"></fieldset>
+		<fieldset><input type="text" validate-min-length="5" validate-max-length="10" placeholder="Between 5 and 10 characters"></fieldset>
+		<fieldset><input type="text" validate-email validate-required placeholder="Email"></fieldset>
+		<fieldset><input type="text" validate-username placeholder="Username"></fieldset>
+		<fieldset><input type="text" validate-url placeholder="URL"></fieldset>
+	</form>
+</body>
+</html>
