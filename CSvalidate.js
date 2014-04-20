@@ -1,3 +1,7 @@
+// CSValidate.js
+// Thomas Cullen
+// MIT
+
 function CSValidate(selector, options){
 
 	CSVRequiredError = typeof options !== 'undefined' ? options.requiredError : "Value is required";
