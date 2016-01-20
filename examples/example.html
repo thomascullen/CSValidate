@@ -1,0 +1,11 @@
+<script type="text/javascript" src='../dist/csvalidate.js'></script>
+<style media="screen">
+  input{ outline: none; }
+  .input--invalid{ border-color: red; }
+</style>
+
+<form action="/" method="post">
+  <input type='text' data-validate='{"presence": "true"}' />
+  <br />
+  <input type="submit" value="Submit">
+</form>
